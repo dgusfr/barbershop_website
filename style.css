@@ -266,17 +266,26 @@ th {
 }
 
 .conteudo-beneficios {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
   width: 640px;
   margin: 0 auto;
 }
+
 .lista-beneficios {
   width: 40%;
-  display: inline-block;
-  vertical-align: top;
+  list-style: none;
 }
-/* espaçamento do texto: */
+
 .itens {
   line-height: 1.5;
+  margin-bottom: 10px;
+}
+
+.img-beneficios {
+  width: 50%;
+  max-width: 300px; /* Ajuste o tamanho máximo conforme necessário */
 }
 
 /* pseudo-elemento first-child a alteração serão feitas no primeiro item */
@@ -381,8 +390,4 @@ ul {
   vertical-align: top;
   width: 20%;
   margin-right: 15%;
-}
-
-.imagembeneficios {
-  width: 50%;
 }
