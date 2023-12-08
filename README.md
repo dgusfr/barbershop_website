@@ -2,7 +2,7 @@
 
 Bem-vindo ao projeto **Barbearia Generic**! Este é um site fictício para uma barbearia, desenvolvido com o objetivo de aprendizado e prática.
 
-![Projeto Barbearia Generic](caminho/para/projeto.png)
+![Projeto Barbearia Generic](img/projeto.png)
 
 ## Descrição
 
