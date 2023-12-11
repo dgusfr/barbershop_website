@@ -3,39 +3,54 @@ body {
 }
 
 header {
-  background: #bbbbbb;
-  padding: 20px 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 20px;
+  flex-wrap: wrap;
+  padding: 20px;
+  background-color: #bbbbbb;
 }
 
-main {
-  background: #ffffff;
-  padding: 20px 0;
+.header-menu li {
+  margin: 0 10px;
 }
 
-.footer-background {
-  background: #bbbbbb;
-  padding: 20px 0;
+.header-menu a {
+  padding: 10px 15px;
+  text-decoration: none;
+  border: 2px solid #fff;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+
+.header-menu a:hover {
+  background-color: #fff;
+  color: #333;
 }
 
 .caixa {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  width: 940px;
+  width: 100%;
+  max-width: 940px;
   margin: 0 auto;
 }
 
-.logo {
-  width: 20%; /* Ajuste a porcentagem conforme necessário */
-  height: auto; /* Isso mantém a proporção da imagem */
-  margin: 0;
+.logo-principal {
+  justify-content: flex-start;
+}
+
+.caixa nav {
+  justify-content: flex-end;
 }
 
 nav ul {
   list-style: none;
   padding: 0;
   margin: 0;
-  display: flex; /* Adicionar flex para alinhar os itens na mesma linha */
+  display: flex;
 }
 
 nav li {
@@ -55,39 +70,29 @@ nav a:hover {
   text-decoration: underline;
 }
 
-.produtos {
-  display: flex;
-  flex-wrap: wrap; /* Permitir que os itens quebrem para a próxima linha conforme necessário */
-  justify-content: space-between; /* Distribuir os itens horizontalmente */
-  width: 940px;
-  margin: 0 auto;
-  padding: 50px 0;
+main {
+  background: #ffffff;
+  padding: 20px 0;
 }
 
-.produtos li {
-  flex: 0 0 calc(30% - 3%); /* Calcular a largura dos itens com margens */
-  text-align: center;
-  margin: 0 1.5%;
-  padding: 30px 20px;
-  box-sizing: border-box;
-  border: 2px solid #000000;
-  border-radius: 10px;
+.footer-background {
+  background: #bbbbbb;
+  padding: 20px 0;
 }
 
 .produtos {
   display: flex;
-  justify-content: space-around; /* Distribuir os itens horizontalmente com espaço uniforme */
-  align-items: flex-start; /* Alinhar os itens no topo */
-  flex-wrap: wrap; /* Permitir que os itens quebrem para a próxima linha conforme necessário */
+  justify-content: space-around;
+  gap: 10px;
   width: 940px;
-  margin: 0 auto;
-  padding: 50px 0;
+  margin: 0;
+  padding: 0;
+  list-style: none;
 }
 
 .produtos li {
-  flex: 0 0 calc(30% - 20px); /* Calcular a largura dos itens com um espaço desejado */
+  flex: 0 0 30%;
   text-align: center;
-  margin: 0 10px; /* Reduzir a margem entre os itens */
   padding: 30px 20px;
   box-sizing: border-box;
   border: 2px solid #000000;
@@ -124,7 +129,7 @@ nav a:hover {
 .centro-formulario {
   display: flex;
   justify-content: center;
-  align-items: center;
+  align-items: baseline;
   min-height: 100vh;
   margin: 0;
 }
@@ -182,17 +187,30 @@ Podemos ter dois from para os parametros servirem para os dois*/
 
 .enviar:hover {
   background: green;
-  /* transition: Tempo que uma transição vai acontecer:
-	all: para todos os elementos (ou escolher o elemento, ex: background) */
   transition: 1s all;
-  /* Cursor clicavél: */
   cursor: pointer;
-  /* Aumentar caixa: */
   transform: scale(1.2);
 }
 
-table {
-  margin: 30px 0 50px;
+.tabela-estilizada {
+  width: 500px;
+  border-collapse: collapse;
+  margin-bottom: 20px;
+}
+
+.tabela-estilizada th,
+.tabela-estilizada td {
+  padding: 12px;
+  text-align: left;
+  border: 1px solid #ddd; /* Adiciona bordas às células */
+}
+
+.tabela-estilizada th {
+  background-color: #f2f2f2;
+}
+
+.tabela-estilizada tr:hover {
+  background-color: #f5f5f5;
 }
 
 thead {

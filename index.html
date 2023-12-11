@@ -2,85 +2,83 @@
 <html lang="pt-br">
 
 <head>
-	<meta charset="UTF-8">
-	<!-- Para deixar o site melhor no celular: -->
-	<meta name="viewport" content="width=device-width">
-	<title>Barbearia Generic</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width">
+    <title>Barbearia Generic</title>
 
-	<link rel="stylesheet" href="reset.css">
-	<link rel="stylesheet" href="style.css">
-	<link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet">
 
 </head>
 
 <body>
-	<header>
-		<div class="caixa">
-			<h1 class="logo"><img src="img/logo.png"></h1>
+    <header>
+        <div class="caixa">
+            <h1 class="logo-principal"><img src="img/logo.png"></h1>
 
-			<nav>
-				<ul>
-					<li><a href="index.html">Home</a></li>
-					<li><a href="produtos.html">Produtos</a></li>
-					<li><a href="contato.html">Contato</a></li>
-				</ul>
-			</nav>
-		</div>
-	</header>
-	<!-- classe: estilo. identificador: comportamento -->
-	<img class="banner" src="img/banner.jpg">
+            <nav aria-label="primaria">
+                <ul class="header-menu font-1-m cor-0">
+                    <li><a class="menu-button" href="./index.html">Home</a></li>
+                    <li><a class="menu-button" href="./produtos.html">Produtos</a></li>
+                    <li><a class="menu-button" href="./contato.html">Contato</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
 
-	<main>
-		<!-- section é a divisão complexa de conteudo -->
-		<section class="principal">
-			<h2 class="titulo-principal">Sobre a Barbearia Generic</h2>
+    <img class="banner" src="img/banner.jpg">
 
-			<img class="utensilios" src="img/utensilios.jpg" alt="Utensilios de Barbeiro">
+    <main>
+        <section class="principal">
+            <h2 class="titulo-principal">Sobre a Barbearia Generic</h2>
 
-			<p>Localizada no coração da cidade a <strong>Barbearia Generic</strong> traz para o mercado o que há de melhor para o seu cabelo e barba. Fundada em 2019, a Barbearia Generic já é destaque na cidade e conquista novos clientes a cada dia.</p>
+            <img class="utensilios" src="img/utensilios.jpg" alt="Utensilios de Barbeiro">
 
-			<p id="missao"><em>Nossa missão é: <strong>"Proporcionar auto-estima e qualidade de vida aos clientes"</strong>.</em></p>
+            <p>Localizada no coração da cidade a <strong>Barbearia Generic</strong> traz para o mercado o que há de melhor para o seu cabelo e barba. Fundada em 2019, a Barbearia Generic já é destaque na cidade e conquista novos clientes a cada dia.</p>
 
-			<p>Oferecemos profissionais experientes e antenados às mudanças no mundo da moda. O atendimento possui padrão de excelência e agilidade, garantindo qualidade e satisfação dos nossos clientes.</p>
-		</section>
+            <p id="missao"><em>Nossa missão é: <strong>"Proporcionar auto-estima e qualidade de vida aos clientes"</strong>.</em></p>
 
-		<!-- Implementação do mapa:  -->
-		<section class="mapa">
-			<h3 class="titulo-principal">Nosso estabelecimento</h3>
-			<p>Nosso estabelecimento está localizado no coração da cidade.</p>
-			<!-- Link google maps:  -->
-			<div class="mapa-conteudo">
-				<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3656.4716730816767!2d-46.65982228447506!3d-23.587411268441123!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce59f1069d11d1%3A0xcb936109af9ce541!2sParque%20Ibirapuera!5e0!3m2!1spt-BR!2sbr!4v1670845518295!5m2!1spt-BR!2sbr" width="100%" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-			</div>
-		</section>
-
-		<section class="beneficios">
-			<h3 class="titulo-principal">Benefícios</h3>
-
-			<<div class="conteudo-beneficios">
-				<ul class="lista-beneficios">
-					<li class="itens">Atendimento aos Clientes</li>
-					<li class="itens">Espaço diferenciado</li>
-					<li class="itens">Localização</li>
-					<li class="itens">Profissionais Qualificados</li>
-					<li class="itens">Pontualidade</li>
-					<li class="itens">Limpeza</li>
-				</ul>
-				<img src="img/beneficios.jpg" class="img-beneficios">
-				</div>
+            <p>Oferecemos profissionais experientes e antenados às mudanças no mundo da moda. O atendimento possui padrão de excelência e agilidade, garantindo qualidade e satisfação dos nossos clientes.</p>
+        </section>
 
 
-				<div class="video">
-					<iframe width="100%" height="315" src="https://www.youtube.com/embed/wcVVXUV0YUY" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
-					</iframe>
-				</div>
-		</section>
-	</main>
+        <section class="mapa">
+            <h3 class="titulo-principal">Nosso estabelecimento</h3>
+            <p>Nosso estabelecimento está localizado no coração da cidade.</p>
 
-	<footer class="footer-background">
-		<img src="img/logo-branco.png" alt="logobranco" class="logo">
-		<p class="copyright">&copy; Copyright Barbearia Generic - 2019</p>
-	</footer>
+            <div class="mapa-conteudo">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3656.4716730816767!2d-46.65982228447506!3d-23.587411268441123!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce59f1069d11d1%3A0xcb936109af9ce541!2sParque%20Ibirapuera!5e0!3m2!1spt-BR!2sbr!4v1670845518295!5m2!1spt-BR!2sbr" width="100%" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+        </section>
+
+        <section class="beneficios">
+            <h3 class="titulo-principal">Benefícios</h3>
+
+            <<div class="conteudo-beneficios">
+                <ul class="lista-beneficios">
+                    <li class="itens">Atendimento aos Clientes</li>
+                    <li class="itens">Espaço diferenciado</li>
+                    <li class="itens">Localização</li>
+                    <li class="itens">Profissionais Qualificados</li>
+                    <li class="itens">Pontualidade</li>
+                    <li class="itens">Limpeza</li>
+                </ul>
+                <img src="img/beneficios.jpg" class="img-beneficios">
+                </div>
+
+
+                <div class="video">
+                    <iframe width="100%" height="315" src="https://www.youtube.com/embed/wcVVXUV0YUY" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
+                    </iframe>
+                </div>
+        </section>
+    </main>
+
+    <footer class="footer-background">
+        <img src="img/logo-branco.png" alt="logobranco" class="logo">
+        <p class="copyright">&copy; Copyright Barbearia Generic - 2019</p>
+    </footer>
 
 </body>
 
