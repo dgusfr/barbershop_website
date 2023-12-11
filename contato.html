@@ -2,97 +2,98 @@
 <html>
 
 <head>
-	<meta charset="UTF-8">
-	<title>Contatos - Barbearia Generic</title>
+    <meta charset="UTF-8">
+    <title>Contatos - Barbearia Generic</title>
 
-	<link rel="stylesheet" href="reset.css">
-	<link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
-	<header>
-		<div class="caixa">
-			<h1 class="logo"><img src="img/logo.png"></h1>
+    <header class="header-bg">
+        <div class="header container">
+            <a href="./">
+                <img src="./img/logo.png" alt="Seu Logo" idth="200" height="60">
+            </a>
+            <nav aria-label="primaria">
+                <ul class="header-menu font-1-m cor-0">
+                    <li><a href="./index.html">Home</a></li>
+                    <li><a href="./produtos.html">Produtos</a></li>
+                    <li><a href="./contato.html">Contato</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
 
-			<nav aria-label="primaria">
-				<ul class="header-menu font-1-m cor-0">
-					<li><a class="menu-button" href="./index.html">Home</a></li>
-					<li><a class="menu-button" href="./produtos.html">Produtos</a></li>
-					<li><a class="menu-button" href="./contato.html">Contato</a></li>
-				</ul>
-			</nav>
-		</div>
-	</header>
+    <main class="centro-formulario">
+        <form>
+            <label for="nomesobrenome">Nome e sobrenome</label>
+            <input type="text" id="nomesobrenome" class="input-padrao" required>
 
-	<main class="centro-formulario">
-		<form>
-			<label for="nomesobrenome">Nome e sobrenome</label>
-			<input type="text" id="nomesobrenome" class="input-padrao" required>
+            <label for="email">Email</label>
+            <input type="email" id="email" class="input-padrao" required placeholder="seuemail@dominio.com">
 
-			<label for="email">Email</label>
-			<input type="email" id="email" class="input-padrao" required placeholder="seuemail@dominio.com">
+            <label for="telefone">Telefone</label>
+            <input type="tel" id="telefone" class="input-padrao" required placeholder="(XX)XXXXX-XXXX">
 
-			<label for="telefone">Telefone</label>
-			<input type="tel" id="telefone" class="input-padrao" required placeholder="(XX)XXXXX-XXXX">
-
-			<label for="menssagem">Mensagem</label>
-			<textarea cols="69" rows="10" id="mensagem" class="input-padrao" required>
+            <label for="menssagem">Mensagem</label>
+            <textarea cols="69" rows="10" id="mensagem" class="input-padrao" required>
 				</textarea>
 
-			<fieldset>
-				<legend>Como podemos entrar em contato?</legend>
-				<label for="radio-email"><input type="radio" name="contato" value="email" id="radio-email">Email</label>
+            <fieldset>
+                <legend>Como podemos entrar em contato?</legend>
+                <label for="radio-email"><input type="radio" name="contato" value="email" id="radio-email">Email</label>
 
-				<label for="radio-telefone"><input type="radio" name="contato" value="telefone" id="radio-telefone">Telefone</label>
+                <label for="radio-telefone"><input type="radio" name="contato" value="telefone" id="radio-telefone">Telefone</label>
 
-				<label for="radio-whatsapp"><input type="radio" name="contato" value="whatsapp" id="radio-whatsapp" checked>WhatsApp</label>
+                <label for="radio-whatsapp"><input type="radio" name="contato" value="whatsapp" id="radio-whatsapp" checked>WhatsApp</label>
 
-			</fieldset>
+            </fieldset>
 
-			<fieldset>
-				<legend>Qual horario prefere ser atendido?</legend>
-				<select>
-					<option>Manhâ</option>
-					<option>Tarde</option>
-					<option>Noite</option>
-				</select>
-			</fieldset>
+            <fieldset>
+                <legend>Qual horario prefere ser atendido?</legend>
+                <select>
+                    <option>Manhâ</option>
+                    <option>Tarde</option>
+                    <option>Noite</option>
+                </select>
+            </fieldset>
 
-			<label class="checkbox"><input type="checkbox" checked>Gostaria de receber nossas promoções por email?</label>
+            <label class="checkbox"><input type="checkbox" checked>Gostaria de receber nossas promoções por email?</label>
 
-			<input type="submit" value="Enviar Formulário" class="enviar">
-		</form>
+            <input type="submit" value="Enviar Formulário" class="enviar">
+        </form>
 
 
-		<table class="tabela-estilizada">
-			<thead>
-				<tr>
-					<th>Dia</th>
-					<th>Horário</th>
-				</tr>
-			</thead>
-			<tbory>
-				<tr>
-					<td>Segunda</td>
-					<td>8h - 20h</td>
-				</tr>
-				<tr>
-					<td>Quarta</td>
-					<td>8h - 20h</td>
-				</tr>
-				<tr>
-					<td>Sexta</td>
-					<td>8h - 20h</td>
-				</tr>
-			</tbory>
+        <table class="tabela-estilizada">
+            <thead>
+                <tr>
+                    <th>Dia</th>
+                    <th>Horário</th>
+                </tr>
+            </thead>
+            <tbory>
+                <tr>
+                    <td>Segunda</td>
+                    <td>8h - 20h</td>
+                </tr>
+                <tr>
+                    <td>Quarta</td>
+                    <td>8h - 20h</td>
+                </tr>
+                <tr>
+                    <td>Sexta</td>
+                    <td>8h - 20h</td>
+                </tr>
+            </tbory>
 
-		</table>
-	</main>
+        </table>
+    </main>
 
-	<footer class="footer-background">
-		<img src="img/logo-branco.png" alt="logobranco" class="logo">
-		<p class="copyright">&copy; Copyright Barbearia Generic - 2019</p>
-	</footer>
+    <footer class="footer-background">
+        <img src="img/logo-branco.png" alt="logobranco" class="logo" style="width: auto; height: auto;">
+        <p class="copyright">&copy; Copyright Barbearia Generic - 2019</p>
+    </footer>
 </body>
 
 </html>

@@ -2,24 +2,37 @@ body {
   font-family: "Montserrat", sans-serif;
 }
 
-header {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  gap: 20px;
-  flex-wrap: wrap;
-  padding: 20px;
+.header-bg {
   background-color: #bbbbbb;
 }
 
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  background-color: #bbbbbb;
+  height: 80px;
+}
+
+.header a {
+  text-decoration: none;
+}
+
+.header-menu {
+  list-style: none;
+  display: flex;
+}
+
 .header-menu li {
-  margin: 0 10px;
+  margin-right: 20px;
 }
 
 .header-menu a {
+  display: inline-block;
   padding: 10px 15px;
   text-decoration: none;
-  border: 2px solid #fff;
+  border: 2px solid #000000;
   border-radius: 5px;
   transition: background-color 0.3s ease;
 }
