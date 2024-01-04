@@ -7,6 +7,7 @@ Bem-vindo ao projeto **Barbearia Generic**! Este é um site fictício para uma b
 ## Descrição
 
 O projeto consiste em um site simples para uma barbearia, apresentando informações sobre a barbearia, serviços oferecidos, horário de funcionamento e formas de contato.
+Este projeto tem grande apelo emocional para mim, pois foi o meu primeiro projeto utilizando HTML dentro do mundo Front-end.
 
 ## Conteúdo
 
@@ -27,9 +28,5 @@ O projeto consiste em um site simples para uma barbearia, apresentando informaç
   - **Cores:** Esquema de cores consistente usando tons de cinza e laranja.
   - **Fontes:** Utilização da fonte "Montserrat" para uma aparência moderna.
 
-## Como Utilizar
 
-1. **Clone o Repositório:**
-   ```bash
-   git clone https://github.com/seu-usuario/barbearia-generic.git
-   ```
+
