@@ -10,11 +10,9 @@ Bem-vindo ao projeto **Barbearia Generic**! Este é um site fictício para uma b
   <div style="margin-right: 20px; display: flex; align-items: center;">
     <img src="img/html.png" alt="Logo HTML" width="100"/>
   </div>
-
   <div style="display: flex; align-items: center;">
     <img src="img/css.png" alt="Logo CSS" width="100"/>
   </div>
-
 </div>
 
 ## Descrição
