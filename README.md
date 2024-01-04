@@ -7,7 +7,7 @@ Bem-vindo ao projeto **Barbearia Generic**! Este é um site fictício para uma b
 ## Tecnologias Utilizadas
 
 <div style="display: flex; align-items: center;">
-  <div style="margin-right: 20px; display: flex; align-items: center;">
+  <div display: flex; align-items: center;">
     <img src="img/html.png" alt="Logo HTML" width="100"/>
   </div>
   <div style="display: flex; align-items: center;">
