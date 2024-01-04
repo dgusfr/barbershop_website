@@ -4,6 +4,19 @@ Bem-vindo ao projeto **Barbearia Generic**! Este é um site fictício para uma b
 
 ![Projeto Barbearia Generic](img/Projeto.png)
 
+## Tecnologias Utilizadas
+
+<div style="display: flex; align-items: center;">
+  <div style="margin-right: 20px; display: flex; align-items: center;">
+    <img src="img/html.png" alt="Logo HTML" width="100"/>
+  </div>
+
+  <div style="display: flex; align-items: center;">
+    <img src="img/css.png" alt="Logo CSS" width="100"/>
+  </div>
+
+</div>
+
 ## Descrição
 
 O projeto consiste em um site simples para uma barbearia, apresentando informações sobre a barbearia, serviços oferecidos, horário de funcionamento e formas de contato.
@@ -27,6 +40,3 @@ Este projeto tem grande apelo emocional para mim, pois foi o meu primeiro projet
 - **Estilo:**
   - **Cores:** Esquema de cores consistente usando tons de cinza e laranja.
   - **Fontes:** Utilização da fonte "Montserrat" para uma aparência moderna.
-
-
-
