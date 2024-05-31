@@ -38,3 +38,6 @@ Este projeto tem grande apelo emocional para mim, pois foi o meu primeiro projet
 - **Estilo:**
   - **Cores:** Esquema de cores consistente usando tons de cinza e laranja.
   - **Fontes:** Utilização da fonte "Montserrat" para uma aparência moderna.
+
+# Autor
+Desenvolvido por Diego Franco
