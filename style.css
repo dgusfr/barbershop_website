@@ -98,7 +98,7 @@ main {
   justify-content: space-around;
   gap: 10px;
   width: 940px;
-  margin: 0;
+  margin: 0 auto;
   padding: 0;
   list-style: none;
 }
@@ -168,17 +168,11 @@ form legend {
   display: block;
   font-size: 20px;
   margin: 0 0 10px;
-  /* topo: margem de 0px */
-  /* esquerda e direita: margem de 0%  */
-  /* inferior: margem de 10px  */
 }
 
-/* Relacionado ao valores de entradas dos dados
-Podemos ter dois from para os parametros servirem para os dois*/
 .input-padrao {
   display: block;
   margin: 0 0 20px;
-  /* Realiza o espaçamento borda-conteudo: */
   padding: 10px 25px;
   width: 50%;
 }
@@ -215,7 +209,7 @@ Podemos ter dois from para os parametros servirem para os dois*/
 .tabela-estilizada td {
   padding: 12px;
   text-align: left;
-  border: 1px solid #ddd; /* Adiciona bordas às células */
+  border: 1px solid #ddd;
 }
 
 .tabela-estilizada th {
@@ -237,17 +231,13 @@ th {
   padding: 10px 20px;
 }
 
-/* css pagina principal */
 .banner {
-  /* Para imagem principal preencher 100% da largura da tela:*/
   width: 100%;
 }
 
 .titulo-principal {
   text-align: center;
-  /* em é a medida proporcional para pixels */
   font-size: 2em;
-  /* se a fonte basica tiver 20px a fonte principal terá 40px */
   margin: 0 0 1em;
   clear: left;
   color: rgba(0, 0, 0, 0.5);
@@ -316,25 +306,21 @@ th {
 
 .img-beneficios {
   width: 50%;
-  max-width: 300px; /* Ajuste o tamanho máximo conforme necessário */
+  max-width: 300px;
 }
 
-/* pseudo-elemento first-child a alteração serão feitas no primeiro item */
 .itens:first-child {
   font-weight: bold;
 }
 
-/* escolher o elemento da lista que será modificado: (no caso o quarto) */
 .itens:nth-child(4) {
   font-weight: bold;
 }
 
-/* o ultimo elemento da lista será alterado: */
 .itens:last-child {
   font-weight: bold;
 }
 
-/* Adicionando simbolo antes ou depois de algo: */
 .itens:before {
   content: "⭐ ";
 }
@@ -354,71 +340,109 @@ th {
   margin: 2em auto;
 }
 
-/* query: */
-@media screen and (max-width: 480px) {
-  .caixa,
-  .principal,
-  .conteudo-beneficios,
-  .mapa-conteudo,
-  .video {
-    width: auto;
+@media screen and (max-width: 800px) {
+  .header {
+    flex-direction: column;
+    align-items: flex-start;
   }
 
-  h1 {
-    text-align: center;
-  }
-
-  nav {
-    position: static;
-  }
-
-  .lista-beneficios,
-  imagem-beneficios {
+  .header-menu {
+    flex-direction: column;
     width: 100%;
   }
+
+  .header-menu li {
+    margin-right: 0;
+    margin-bottom: 10px;
+  }
+
+  .produtos {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .produtos li {
+    flex: 1 1 100%;
+    max-width: 90%;
+    margin-bottom: 20px;
+  }
+
+  .principal, .mapa-conteudo, .conteudo-beneficios {
+    width: 100%;
+    padding: 0 10px;
+  }
+
+  .img-beneficios {
+    width: 100%;
+  }
+
+  .conteudo-beneficios {
+    flex-direction: column;
+  }
+
+  .banner {
+    height: auto;
+  }
+
+  .utensilios {
+    width: 100%;
+    float: none;
+    margin: 20px 0;
+  }
 }
 
-#banner {
-  width: 100%;
-}
+@media screen and (max-width: 400px) {
+  .header {
+    padding: 10px;
+  }
 
-.principal {
-  background: #ffffff;
-  padding: 30px;
-}
+  .header-menu a {
+    font-size: 14px;
+    padding: 8px 10px;
+  }
 
-.titulo-principal {
-  padding-left: 20px;
-}
+  .titulo-principal {
+    font-size: 1.5em;
+  }
 
-.titulo-centralizado {
-  text-align: center;
-}
+  .produtos h2 {
+    font-size: 24px;
+  }
 
-p {
-  text-align: center;
-}
+  .produto-descricao, .produto-preco {
+    font-size: 16px;
+  }
 
-#missao {
-  font-size: 20px;
-}
+  .input-padrao, .enviar {
+    width: 100%;
+  }
 
-em strong {
-  color: #ff0000;
-}
+  .tabela-estilizada {
+    width: 100%;
+  }
 
-.itens {
-  font-style: italic;
-}
+  .tabela-estilizada th, .tabela-estilizada td {
+    font-size: 14px;
+    padding: 8px;
+  }
 
-.beneficios {
-  background: #ffffff;
-  padding: 20px;
-}
+  .video {
+    width: 100%;
+  }
 
-ul {
-  display: inline-block;
-  vertical-align: top;
-  width: 20%;
-  margin-right: 15%;
+  .checkbox {
+    display: block;
+  }
+
+  form {
+    width: 100%;
+  }
+
+  .banner, .utensilios, .img-beneficios {
+    width: 100%;
+  }
+
+  .mapa-conteudo, .conteudo-beneficios {
+    width: 100%;
+  }
 }
